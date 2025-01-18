@@ -26,6 +26,12 @@ p {
     padding: 0;
 }
 
+h1 {
+    font-size: 2rem; 
+    color: darkblue;
+    text-align: center; 
+}
+
 aside {
     width: 20rem;
     margin: 1rem auto;
