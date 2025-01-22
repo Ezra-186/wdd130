@@ -1,54 +1,77 @@
+:root {
+    --nav-bg-color: darkblue;
+    --nav-link-color: white;
+    --main-width: 840px;
+    --main-img-width: 150px;
+    --main-img-border: 1px solid black;
+    --main-img-shadow: 0 0 30px gray;
+    --text-padding: 0;
+    --heading-font-size: 2rem;
+    --heading-color: darkblue;
+    --aside-width: 20rem;
+    --aside-margin: 1rem auto;
+    --aside-border: 1px solid rgba(0, 0, 0, 0.2);
+    --aside-padding: 1rem;
+    --aside-bg-color: #eee;
+    --aside-text-color: #333;
+    --aside-img-width: 200px;
+    --footer-margin-top: 15px;
+    --footer-border-top: 1px solid #000;
+    --text-align-center: center;
+}
+
 nav {
-    background-color: darkblue;
+    background-color: var(--nav-bg-color);
     padding: 10px;
 }
 
 nav a {
-    color: white;
+    color: var(--nav-link-color);
     display: block;
     padding: 20px;
 }
 
 main {
-    max-width: 840px;
+    max-width: var(--main-width);
     margin: 0 auto;
 }
 
 main img {
-    width: 150px;
+    width: var(--main-img-width);
     height: auto;
-    border: 1px solid black;
+    border: var(--main-img-border);
     padding: 2px;
-    box-shadow: 0 0 30px gray;
+    box-shadow: var(--main-img-shadow);
 }
 
 p {
-    padding: 0;
+    padding: var(--text-padding);
 }
 
 h1 {
-    font-size: 2rem; 
-    color: darkblue;
-    text-align: center; 
+    font-size: var(--heading-font-size); 
+    color: var(--heading-color);
+    text-align: var(--text-align-center);
 }
 
 aside {
-    width: 20rem;
-    margin: 1rem auto;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
-    text-align: center;
+    width: var(--aside-width);
+    margin: var(--aside-margin);
+    border: var(--aside-border);
+    padding: var(--aside-padding);
+    background-color: var(--aside-bg-color);
+    color: var(--aside-text-color);
+    text-align: var(--text-align-center);
 }
 
 aside img {
-    width: 200px;
+    width: var(--aside-img-width);
     height: auto;
 }
 
 footer {
-    margin-top: 15px;
-    border-top: 1px solid #000;
-    text-align: center;
+    margin-top: var(--footer-margin-top);
+    border-top: var(--footer-border-top);
+    text-align: var(--text-align-center);
 }
+
