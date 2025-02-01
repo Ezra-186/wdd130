@@ -1,9 +1,11 @@
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Root Variables */
 :root {
     --nav-bg-color: darkblue;
     --nav-link-color: white;
@@ -24,22 +26,83 @@
     --footer-margin-top: 15px;
     --footer-border-top: 1px solid #000;
     --text-align-center: center;
+    --gap-size: 20px;
 }
 
+/* Flexbox for Navigation */
 nav {
     background-color: var(--nav-bg-color);
-    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    max-width: var(--main-width);
+    margin: 0 auto;
 }
 
 nav a {
     color: var(--nav-link-color);
-    display: block;
-    padding: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
 }
 
+/* Grid Layout */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr; 
+    gap: var(--gap-size);
+    max-width: var(--main-width);
+    margin: 20px auto;
+    align-items: start;
+}
+
+/* Sidebar (Aside) */
+aside {
+    position: relative;
+    padding: var(--aside-padding);
+    background-color: var(--aside-bg-color);
+    border: var(--aside-border);
+    text-align: center;
+}
+
+aside h2 {
+    position: absolute;
+    top: 23px; 
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.7); 
+    padding: 5px 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 5px; 
+    z-index: 2; 
+}
+
+aside img {
+    width: 100%; 
+    height: auto;
+    border-radius: 5px;
+}
+
+aside p {
+    margin-top: 1rem;
+    text-align: justify;
+}
+
+/* Main Content */
 main {
     max-width: var(--main-width);
     margin: 0 auto;
+}
+
+main h1 {
+    font-size: var(--heading-font-size);
+    color: var(--heading-color);
+    text-align: var(--text-align-center);
+    border-bottom: 2px solid var(--footer-border-top);
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
 }
 
 main img {
@@ -49,51 +112,27 @@ main img {
     padding: 2px;
     box-shadow: var(--main-img-shadow);
     float: right;
+    margin-left: 1rem;
 }
 
-p {
-    padding: var(--text-padding);
+main p {
+    margin-bottom: 1rem;
+    text-align: justify;
 }
 
-h1 {
-    font-size: var(--heading-font-size); 
-    color: var(--heading-color);
-    text-align: var(--text-align-center);
+main ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
 }
 
-aside {
-    position: relative;
-    width: var(--aside-width);
-    margin: var(--aside-margin);
-    border: var(--aside-border);
-    padding: var(--aside-padding);
-    background-color: var(--aside-bg-color);
-    color: var(--aside-text-color);
-    text-align: var(--text-align-center);
+main ul li {
+    margin-bottom: 0.5rem;
 }
 
-aside img {
-    width: var(--aside-img-width);
-    height: auto;
-}
-
-aside h2 {
-    position: absolute;
-    top: 27px;
-    left: 96px;
-}
-
+/* Footer */
 footer {
     margin-top: var(--footer-margin-top);
     border-top: var(--footer-border-top);
     text-align: var(--text-align-center);
-}
-
-/* Class Selectors */
-.box {
-    margin: 1rem;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    padding: 1rem;
-    background-color: #ddd;
-    color: #000;
+    padding: 1rem 0;
 }
