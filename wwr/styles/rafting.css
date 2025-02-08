@@ -199,3 +199,261 @@ footer {
 .sociallinks a img {
     height: 24px;
 }
+
+
+
+
+
+
+/* Contact Page Styles */
+.contact-hero {
+    text-align: center;
+    padding: 2rem;
+    margin-top: 5px;
+    background-color: var(--secondary-color);
+}
+
+.contact-hero h1 {
+    color: var(--accent2-color);
+    font-size: 2.2rem;
+}
+
+.contact-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    gap: 30px;
+}
+
+.company-info {
+    display: grid;
+    gap: 15px;
+}
+
+.company-info iframe {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.team-gallery {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.team-gallery figure {
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+}
+
+.team-gallery img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.contact-form {
+    background: var(--secondary-color);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid var(--accent1-color);
+}
+
+fieldset {
+    border: 1px solid var(--accent1-color);
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+button[type="submit"] {
+    background-color: var(--accent1-color);
+    color: var(--accent2-color);
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button[type="submit"]:hover {
+    background-color: #ff5722;
+}
+
+
+
+
+/* Company Info Page Starts Here */
+
+.company-info {
+    text-align: center;
+    width: 100%;
+    background: var(--secondary-color);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.company-info address {
+    margin: 1.5rem 0;
+    line-height: 1.6;
+    font-style: normal;
+}
+
+.company-info iframe {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+
+/* Team Section Styling */
+.team-section {
+    text-align: center;
+    width: 100%;
+}
+
+.team-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.team-gallery figure {
+    flex: 1;
+    min-width: 150px;
+    max-width: 200px;
+}
+
+.team-gallery img {
+    width: 100%;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Form Styling */
+.contact-form {
+    width: 100%;
+    background: var(--secondary-color);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: var(--accent2-color);
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px solid var(--accent1-color);
+    border-radius: 6px;
+    background: var(--primary-color);
+    color: var(--accent2-color);
+    font-size: 1rem;
+}
+
+.form-group textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+fieldset {
+    border: 2px solid var(--accent1-color);
+    border-radius: 6px;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+fieldset legend {
+    font-weight: 500;
+    padding: 0 0.5rem;
+    color: var(--accent2-color);
+}
+
+fieldset label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0.8rem 0;
+    color: var(--accent2-color);
+}
+
+button[type="submit"] {
+    width: 100%;
+    background-color: var(--accent1-color);
+    color: var(--accent2-color);
+    padding: 1rem;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #ff5722;
+}
+
+.form-group input[type="checkbox"] {
+    margin-right: 0.5rem;
+    width: 1.1rem;
+    height: 1.1rem;
+    accent-color: var(--accent1-color);
+}
+
+.sociallinks a.wireframe-link {
+    background: var(--accent1-color);
+    color: var(--accent2-color);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    display: inline-block;
+    margin: 0 0.5rem;
+}
+
+.sociallinks a.wireframe-link:hover {
+    background: #ff5722;
+    text-decoration: none;
+}
