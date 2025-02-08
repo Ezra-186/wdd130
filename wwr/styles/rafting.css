@@ -380,8 +380,7 @@ button[type="submit"]:hover {
     color: var(--accent2-color);
 }
 
-.form-group input[type="text"],
-.form-group input[type="email"],
+.form-group input,
 .form-group textarea {
     width: 100%;
     padding: 0.8rem;
