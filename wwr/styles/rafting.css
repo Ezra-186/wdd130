@@ -2,8 +2,8 @@
 :root {
     --primary-color: #0A2E36; 
     --secondary-color: #2C3E50;
-    --accent1-color: #FF6B35; 
-    --accent2-color: #FFFFFF; 
+    --accent1-color: #FF8C42; 
+    --accent2-color: #EAEAEA; 
 }
 
 /* General Styles */
@@ -298,7 +298,7 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background-color: #ff5722;
+    background-color: #FF8C42;
 }
 
 
@@ -420,7 +420,7 @@ fieldset label {
 
 button[type="submit"] {
     width: 100%;
-    background-color: var(--accent1-color);
+    background-color: black;
     color: var(--accent2-color);
     padding: 1rem;
     font-size: 1.1rem;
@@ -431,7 +431,7 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background-color: #ff5722;
+    background-color: #313030;
 }
 
 .form-group input[type="checkbox"] {
@@ -442,7 +442,7 @@ button[type="submit"]:hover {
 }
 
 .sociallinks a.wireframe-link {
-    background: var(--accent1-color);
+    background: black;
     color: var(--accent2-color);
     padding: 0.5rem 1rem;
     border-radius: 5px;
@@ -454,6 +454,6 @@ button[type="submit"]:hover {
 }
 
 .sociallinks a.wireframe-link:hover {
-    background: #ff5722;
+    background: #1e1e1e;
     text-decoration: none;
 }
